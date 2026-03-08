@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/experience", "dest": "/experience.html" },
+    { "src": "/about", "dest": "/about.html" },
+    { "src": "/services", "dest": "/services.html" },
+    { "src": "/careers", "dest": "/careers.html" },
+    { "src": "/contact", "dest": "/contact.html" }
+  ]
+}

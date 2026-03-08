@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience | Scott Tucker Construction Co.</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .exp-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; }
+    .exp-card { background: var(--navy-card); border: 1px solid rgba(255,255,255,0.06); padding: 40px; transition: border-color 0.3s; position: relative; overflow: hidden; }
+    .exp-card:hover { border-color: rgba(224,92,10,0.4); }
+    .exp-card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background: var(--orange); transform: scaleX(0); transition: transform 0.4s; transform-origin: left; }
+    .exp-card:hover::after { transform: scaleX(1); }
+    .timeline { position: relative; padding-left: 40px; }
+    .timeline::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 1px; background: linear-gradient(to bottom, var(--orange), transparent); }
+    .timeline-item { position: relative; margin-bottom: 48px; }
+    .timeline-dot { position: absolute; left: -44px; top: 4px; width: 10px; height: 10px; background: var(--orange); }
+    .img-gallery { display: grid; grid-template-columns: 2fr 1fr; gap: 2px; }
+    .img-gallery-right { display: grid; grid-template-rows: 1fr 1fr; gap: 2px; }
+    @media(max-width:900px){ .exp-grid{grid-template-columns:1fr 1fr;} .img-gallery{grid-template-columns:1fr;} }
+    @media(max-width:640px){ .exp-grid{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body data-page="experience">
+<div id="nav-placeholder"></div>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="grid-overlay"></div>
+  <div class="hero-accent-line"></div>
+  <img src="assets/bridges.jpg" alt="" class="page-hero-img">
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="hero-eyebrow animate-fade-up anim-delay-1"><div class="hero-eyebrow-line"></div><span style="font-family:var(--mono);font-size:0.7rem;letter-spacing:0.18em;color:var(--orange);text-transform:uppercase;">Track Record</span></div>
+    <h1 class="hero-h1 animate-fade-up anim-delay-2" style="font-size:clamp(3rem,7vw,7rem);">Our<br><span>Experience</span></h1>
+    <p class="hero-sub animate-fade-up anim-delay-3">Decades of delivering complex construction projects safely, on schedule, and within budget — across Texas and beyond.</p>
+  </div>
+</section>
+
+<!-- PROOF POINTS -->
+<section class="section-pad">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 2fr;gap:80px;align-items:start;margin-bottom:80px;">
+      <div><div class="section-tag">Performance</div><h2 class="section-h2">Proven<br><em>Delivery</em></h2></div>
+      <div><p class="section-desc">Our project track record speaks for itself. From municipal water infrastructure to complex bridge structures, we consistently deliver on our commitments to clients, communities, and schedules.</p></div>
+    </div>
+    <div class="exp-grid">
+      <div class="exp-card">
+        <div style="font-family:var(--mono);font-size:0.6rem;letter-spacing:0.18em;color:var(--orange);margin-bottom:20px;">Performance Metric</div>
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:4.5rem;line-height:1;margin-bottom:12px;">0.75<span style="font-size:2rem;color:var(--orange);">EMR</span></div>
+        <div style="color:var(--gray-light);font-size:0.9rem;line-height:1.6;">NCCI Experience Modification Rate — significantly below the industry average of 1.0, reflecting our exceptional safety culture and proactive risk management.</div>
+      </div>
+      <div class="exp-card">
+        <div style="font-family:var(--mono);font-size:0.6rem;letter-spacing:0.18em;color:var(--orange);margin-bottom:20px;">Client Trust</div>
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:4.5rem;line-height:1;margin-bottom:12px;">70<span style="font-size:2rem;color:var(--orange);">%+</span></div>
+        <div style="color:var(--gray-light);font-size:0.9rem;line-height:1.6;">Negotiated work — a testament to client confidence and long-term relationships that are built on performance, transparency, and trust.</div>
+      </div>
+      <div class="exp-card">
+        <div style="font-family:var(--mono);font-size:0.6rem;letter-spacing:0.18em;color:var(--orange);margin-bottom:20px;">Project Scale</div>
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:4.5rem;line-height:1;margin-bottom:12px;">$1M<span style="font-size:2rem;color:var(--orange);">Focus</span></div>
+        <div style="color:var(--gray-light);font-size:0.9rem;line-height:1.6;">70%+ of contracts are under $1 million. We bring full management depth and executive attention to every project, regardless of size.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMAGE SHOWCASE -->
+<section class="section-pad bg-navy-mid">
+  <div class="container">
+    <div class="section-tag">Project Portfolio</div>
+    <h2 class="section-h2" style="margin-bottom:48px;">Built with <em>Precision</em></h2>
+    <div class="img-gallery">
+      <div style="position:relative;">
+        <img src="assets/bridges.jpg" alt="Bridge project" style="width:100%;height:500px;object-fit:cover;filter:brightness(0.7) saturate(0.65);">
+        <div style="position:absolute;bottom:0;left:0;right:0;padding:32px;background:linear-gradient(to top,rgba(8,13,26,0.95),transparent);">
+          <div style="font-family:var(--mono);font-size:0.6rem;letter-spacing:0.18em;color:var(--orange);text-transform:uppercase;margin-bottom:8px;">Market — Bridges</div>
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:2rem;">Structural Engineering &amp; Bridge Work</div>
+        </div>
+      </div>
+      <div class="img-gallery-right">
+        <div style="position:relative;">
+          <img src="assets/water.jpg" alt="Water project" style="width:100%;height:100%;object-fit:cover;filter:brightness(0.65) saturate(0.6);">
+          <div style="position:absolute;bottom:0;left:0;right:0;padding:20px;background:linear-gradient(to top,rgba(8,13,26,0.95),transparent);">
+            <div style="font-family:var(--mono);font-size:0.58rem;letter-spacing:0.16em;color:var(--orange);text-transform:uppercase;margin-bottom:6px;">Market — Water</div>
+            <div style="font-family:'Bebas Neue',sans-serif;font-size:1.4rem;">Water Infrastructure</div>
+          </div>
+        </div>
+        <div style="position:relative;">
+          <img src="assets/electrical.jpg" alt="Electrical project" style="width:100%;height:100%;object-fit:cover;filter:brightness(0.65) saturate(0.6);">
+          <div style="position:absolute;bottom:0;left:0;right:0;padding:20px;background:linear-gradient(to top,rgba(8,13,26,0.95),transparent);">
+            <div style="font-family:var(--mono);font-size:0.58rem;letter-spacing:0.16em;color:var(--orange);text-transform:uppercase;margin-bottom:6px;">Market — Electrical</div>
+            <div style="font-family:'Bebas Neue',sans-serif;font-size:1.4rem;">Industrial Electrical</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section class="section-pad">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;">
+      <div>
+        <div class="section-tag">Our Approach</div>
+        <h2 class="section-h2">How We<br><em>Execute</em></h2>
+        <div class="divider-orange"></div>
+        <p style="color:var(--gray-light);font-size:1rem;line-height:1.8;font-weight:300;">Good planning and hard work pays off big. Before a single shovel breaks ground, our team has mapped out every phase, identified every risk, and aligned every stakeholder. That's how we deliver — consistently.</p>
+      </div>
+      <div>
+        <div class="timeline">
+          <div class="timeline-item"><div class="timeline-dot"></div><div style="font-family:var(--mono);font-size:0.62rem;letter-spacing:0.16em;color:var(--orange);text-transform:uppercase;margin-bottom:6px;">Phase 01</div><div style="font-family:'Bebas Neue',sans-serif;font-size:1.6rem;margin-bottom:8px;">Preconstruction</div><div style="color:var(--gray-light);font-size:0.88rem;line-height:1.6;">Estimating, budgeting, value engineering, and schedule development before breaking ground.</div></div>
+          <div class="timeline-item"><div class="timeline-dot"></div><div style="font-family:var(--mono);font-size:0.62rem;letter-spacing:0.16em;color:var(--orange);text-transform:uppercase;margin-bottom:6px;">Phase 02</div><div style="font-family:'Bebas Neue',sans-serif;font-size:1.6rem;margin-bottom:8px;">Mobilization</div><div style="color:var(--gray-light);font-size:0.88rem;line-height:1.6;">Phasing, safety planning, subcontractor mobilization, and quality control implementation.</div></div>
+          <div class="timeline-item"><div class="timeline-dot"></div><div style="font-family:var(--mono);font-size:0.62rem;letter-spacing:0.16em;color:var(--orange);text-transform:uppercase;margin-bottom:6px;">Phase 03</div><div style="font-family:'Bebas Neue',sans-serif;font-size:1.6rem;margin-bottom:8px;">Construction</div><div style="color:var(--gray-light);font-size:0.88rem;line-height:1.6;">Rigorous progress tracking, change management, status reporting, and QA/QC through every milestone.</div></div>
+          <div class="timeline-item" style="margin-bottom:0;"><div class="timeline-dot"></div><div style="font-family:var(--mono);font-size:0.62rem;letter-spacing:0.16em;color:var(--orange);text-transform:uppercase;margin-bottom:6px;">Phase 04</div><div style="font-family:'Bebas Neue',sans-serif;font-size:1.6rem;margin-bottom:8px;">Closeout</div><div style="color:var(--gray-light);font-size:0.88rem;line-height:1.6;">Commissioning, as-built documentation, warranty programs, and operations handover.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Scott Tucker Construction Co.</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .beliefs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+    .data-vis { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .data-card { background: var(--navy-card); border: 1px solid rgba(255,255,255,0.06); padding: 40px; position: relative; overflow: hidden; }
+    .data-bar { height: 4px; background: var(--steel); margin-top: 20px; }
+    .data-fill { height: 100%; background: var(--orange); transition: width 1s ease; }
+    .focus-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 2px; }
+    @media(max-width:900px){ .beliefs-grid{grid-template-columns:1fr;} .data-vis{grid-template-columns:1fr;} .focus-grid{grid-template-columns:repeat(2,1fr);} }
+    @media(max-width:640px){ .focus-grid{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body data-page="about">
+<div id="nav-placeholder"></div>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="grid-overlay"></div>
+  <div class="hero-accent-line"></div>
+  <img src="assets/building.jpg" alt="" class="page-hero-img">
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="hero-eyebrow animate-fade-up anim-delay-1">
+      <div class="hero-eyebrow-line"></div>
+      <span style="font-family:var(--mono);font-size:0.7rem;letter-spacing:0.18em;color:var(--orange);text-transform:uppercase;">Who We Are</span>
+    </div>
+    <h1 class="hero-h1 animate-fade-up anim-delay-2" style="font-size:clamp(3rem,7vw,7rem);">About<br><span>STCC</span></h1>
+    <p class="hero-sub animate-fade-up anim-delay-3" style="max-width:580px;">Scott Tucker Construction Co. is a Fort Worth–based contractor committed to building great projects through honest work, strong planning, and a culture that puts people first.</p>
+  </div>
+</section>
+
+<!-- MISSION -->
+<section class="section-pad">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 2fr;gap:80px;align-items:start;">
+      <div>
+        <div class="section-tag">Our Mission</div>
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:4rem;line-height:0.9;color:rgba(255,255,255,0.06);margin-top:8px;">BUILD<br>GREAT</div>
+      </div>
+      <div>
+        <h2 class="section-h2" style="font-size:clamp(2rem,4vw,3.5rem);">"To build a<br><em>great construction</em><br>company."</h2>
+        <div class="divider-orange"></div>
+        <p style="color:var(--gray-light);font-size:1.05rem;line-height:1.8;font-weight:300;max-width:600px;">This mission drives every decision we make — from how we hire and train our people, to how we plan and execute projects. We measure greatness not just in structures built, but in the trust earned from every client, partner, and employee.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BELIEFS -->
+<section class="section-pad bg-navy-mid">
+  <div class="container">
+    <div class="section-tag">Core Beliefs</div>
+    <h2 class="section-h2" style="margin-bottom:48px;">What We <em>Stand For</em></h2>
+    <div class="beliefs-grid">
+      <div class="belief-item"><div class="belief-num">01</div><div><div style="font-size:1.05rem;font-weight:500;margin-bottom:8px;">Our employees are our greatest asset</div><div style="color:var(--gray-light);font-size:0.9rem;line-height:1.7;">We invest in our people because they are the foundation of every successful project we deliver.</div></div></div>
+      <div class="belief-item"><div class="belief-num">02</div><div><div style="font-size:1.05rem;font-weight:500;margin-bottom:8px;">Good planning and hard work pays off big</div><div style="color:var(--gray-light);font-size:0.9rem;line-height:1.7;">Thorough planning before work begins is what separates good outcomes from great ones.</div></div></div>
+      <div class="belief-item"><div class="belief-num">03</div><div><div style="font-size:1.05rem;font-weight:500;margin-bottom:8px;">Integrity and honesty are part of our character</div><div style="color:var(--gray-light);font-size:0.9rem;line-height:1.7;">We do what we say, and say what we mean — in every contract, conversation, and commitment.</div></div></div>
+      <div class="belief-item"><div class="belief-num">04</div><div><div style="font-size:1.05rem;font-weight:500;margin-bottom:8px;">Good communication and training is required</div><div style="color:var(--gray-light);font-size:0.9rem;line-height:1.7;">Clear communication at every level keeps projects on track and teams performing at their best.</div></div></div>
+      <div class="belief-item"><div class="belief-num">05</div><div><div style="font-size:1.05rem;font-weight:500;margin-bottom:8px;">Promotion from within is the best way to grow</div><div style="color:var(--gray-light);font-size:0.9rem;line-height:1.7;">We develop careers, not just fill positions. Growing our own talent builds stronger teams.</div></div></div>
+      <div class="belief-item"><div class="belief-num">06</div><div><div style="font-size:1.05rem;font-weight:500;margin-bottom:8px;">Fun and enjoyment every day</div><div style="color:var(--gray-light);font-size:0.9rem;line-height:1.7;">Construction is hard work — but it should also be rewarding and something to be proud of each day.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SAFETY -->
+<section class="section-pad">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;">
+      <div>
+        <div class="section-tag">Safety Statement</div>
+        <h2 class="section-h2">"Everyone<br><em>Goes Home</em>"</h2>
+        <div class="divider-orange"></div>
+        <p style="color:var(--gray-light);font-size:1.1rem;line-height:1.8;font-weight:300;font-style:italic;border-left:3px solid var(--orange);padding-left:24px;margin-bottom:36px;">"Our top priority is that our employees and everyone connected to our job sites goes home to their family every night."</p>
+        <div style="display:flex;gap:32px;align-items:center;">
+          <div style="text-align:center;background:var(--navy-card);border:1px solid rgba(224,92,10,0.3);padding:28px 36px;">
+            <div style="font-family:'Bebas Neue',sans-serif;font-size:3.5rem;color:var(--orange);line-height:1;">0.75</div>
+            <div style="font-family:var(--mono);font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gray-mid);margin-top:6px;">Current NCCI EMR</div>
+          </div>
+          <div>
+            <div style="font-size:0.9rem;color:var(--gray-light);line-height:1.7;">An EMR below 1.0 demonstrates a safety record better than the industry average. Our 0.75 rating reflects our commitment to zero incidents.</div>
+          </div>
+        </div>
+      </div>
+      <div style="position:relative;">
+        <img src="assets/water.jpg" alt="Safety on site" style="width:100%;height:460px;object-fit:cover;filter:brightness(0.65) saturate(0.6);">
+        <div style="position:absolute;bottom:-2px;left:0;right:0;height:4px;background:linear-gradient(to right,var(--orange),transparent);"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BUSINESS INSIGHTS -->
+<section class="section-pad bg-navy-mid">
+  <div class="container">
+    <div class="section-tag">Business Insights</div>
+    <h2 class="section-h2" style="margin-bottom:48px;">By the <em>Numbers</em></h2>
+    <div class="data-vis">
+      <div class="data-card">
+        <div style="font-family:var(--mono);font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:16px;">Negotiated Work</div>
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:5rem;line-height:1;color:var(--white);">70<span style="color:var(--orange);">%+</span></div>
+        <div style="color:var(--gray-light);font-size:0.9rem;line-height:1.6;margin-top:12px;">Over 70% of our work is negotiated, reflecting the deep trust and long-term relationships we maintain with our clients.</div>
+        <div class="data-bar" style="margin-top:24px;"><div class="data-fill" style="width:70%;"></div></div>
+        <div style="font-family:var(--mono);font-size:0.58rem;color:var(--gray-mid);margin-top:6px;letter-spacing:0.12em;">NEGOTIATED vs. BID WORK RATIO</div>
+        <div style="position:absolute;top:24px;right:24px;font-family:'Bebas Neue',sans-serif;font-size:6rem;color:rgba(224,92,10,0.05);line-height:1;pointer-events:none;">70</div>
+      </div>
+      <div class="data-card">
+        <div style="font-family:var(--mono);font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:16px;">Contract Scale</div>
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:5rem;line-height:1;color:var(--white);">70<span style="color:var(--orange);">%+</span></div>
+        <div style="color:var(--gray-light);font-size:0.9rem;line-height:1.6;margin-top:12px;">Over 70% of contracts are under $1 million — focused, efficient project delivery with precision execution at every scale.</div>
+        <div class="data-bar" style="margin-top:24px;"><div class="data-fill" style="width:70%;"></div></div>
+        <div style="font-family:var(--mono);font-size:0.58rem;color:var(--gray-mid);margin-top:6px;letter-spacing:0.12em;">CONTRACTS UNDER $1M</div>
+        <div style="position:absolute;top:24px;right:24px;font-family:'Bebas Neue',sans-serif;font-size:6rem;color:rgba(224,92,10,0.05);line-height:1;pointer-events:none;">$1M</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BUSINESS FOCUS -->
+<section class="section-pad">
+  <div class="container">
+    <div class="section-tag">Business Focus</div>
+    <h2 class="section-h2" style="margin-bottom:48px;">Core <em>Markets</em></h2>
+    <div class="focus-grid">
+      <div style="background:var(--navy-card);border:1px solid rgba(224,92,10,0.3);padding:40px;border-top:3px solid var(--orange);">
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:2rem;margin-bottom:12px;">Commercial<br>Building</div>
+        <div style="color:var(--gray-light);font-size:0.88rem;line-height:1.6;">Full-service commercial construction from ground-up builds to complex renovations.</div>
+      </div>
+      <div style="background:var(--navy-card);border:1px solid rgba(255,255,255,0.06);padding:40px;border-top:3px solid var(--steel-mid);">
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:2rem;margin-bottom:12px;">Self-Perform<br>Concrete</div>
+        <div style="color:var(--gray-light);font-size:0.88rem;line-height:1.6;">In-house concrete operations that ensure quality control and schedule certainty on every pour.</div>
+      </div>
+      <div style="background:var(--navy-card);border:1px solid rgba(255,255,255,0.06);padding:40px;border-top:3px solid var(--steel-mid);">
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:2rem;margin-bottom:12px;">Industrial<br>Electrical</div>
+        <div style="color:var(--gray-light);font-size:0.88rem;line-height:1.6;">Complex electrical systems for industrial and commercial facilities, delivered safely and on schedule.</div>
+      </div>
+      <div style="background:var(--navy-card);border:1px solid rgba(255,255,255,0.06);padding:40px;border-top:3px solid var(--steel-mid);">
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:2rem;margin-bottom:12px;">Water / Waste<br>Water</div>
+        <div style="color:var(--gray-light);font-size:0.88rem;line-height:1.6;">Water and wastewater infrastructure — treatment plants, pump stations, distribution systems.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="nav.js"></script>
+</body>
+</html>

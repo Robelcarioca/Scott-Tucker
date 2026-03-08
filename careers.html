@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers | Scott Tucker Construction Co.</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .careers-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+    .positions-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; }
+    .req-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .req-item { display: flex; align-items: center; gap: 12px; padding: 16px 20px; background: var(--navy-card); border: 1px solid rgba(255,255,255,0.06); }
+    .upload-zone { border: 1px dashed rgba(224,92,10,0.4); padding: 48px; text-align: center; cursor: pointer; transition: border-color 0.2s, background 0.2s; }
+    .upload-zone:hover { border-color: var(--orange); background: rgba(224,92,10,0.04); }
+    @media(max-width:900px){ .careers-grid{grid-template-columns:1fr;} .positions-grid{grid-template-columns:1fr 1fr;} }
+    @media(max-width:640px){ .positions-grid{grid-template-columns:1fr;} .req-grid{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body data-page="careers">
+<div id="nav-placeholder"></div>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="grid-overlay"></div>
+  <div class="hero-accent-line"></div>
+  <img src="assets/building.jpg" alt="" class="page-hero-img">
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="hero-eyebrow animate-fade-up anim-delay-1"><div class="hero-eyebrow-line"></div><span style="font-family:var(--mono);font-size:0.7rem;letter-spacing:0.18em;color:var(--orange);text-transform:uppercase;">Join the Team</span></div>
+    <h1 class="hero-h1 animate-fade-up anim-delay-2" style="font-size:clamp(3rem,7vw,7rem);">Build Your<br><span>Career</span></h1>
+    <p class="hero-sub animate-fade-up anim-delay-3">Scott Tucker Construction is growing. We promote from within, invest in our people, and build careers alongside every structure we deliver.</p>
+  </div>
+</section>
+
+<!-- EEO STATEMENT -->
+<section style="background:var(--orange);padding:40px 0;">
+  <div class="container">
+    <div style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
+      <div style="font-family:var(--mono);font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.7);white-space:nowrap;">Equal Opportunity</div>
+      <div style="width:1px;height:40px;background:rgba(255,255,255,0.3);"></div>
+      <p style="color:var(--white);font-size:0.95rem;line-height:1.6;">Scott Tucker Construction is an equal opportunity employer. We encourage Veterans, Women, Minorities and individuals with disabilities to apply.</p>
+    </div>
+  </div>
+</section>
+
+<!-- POSITIONS -->
+<section class="section-pad">
+  <div class="container">
+    <div class="section-tag">Open Positions</div>
+    <h2 class="section-h2" style="margin-bottom:48px;">Employment <em>Opportunities</em></h2>
+    <div class="careers-grid">
+      <!-- Salaried -->
+      <div>
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:32px;">
+          <div style="background:rgba(224,92,10,0.1);border:1px solid rgba(224,92,10,0.3);padding:6px 16px;font-family:var(--mono);font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--orange);">Salaried Positions</div>
+        </div>
+        <div class="positions-grid" style="grid-template-columns:1fr;">
+          <div class="career-card"><span class="career-tag salaried">Salaried</span><div class="career-title">Building Superintendent</div><div style="color:var(--gray-light);font-size:0.85rem;margin-top:8px;line-height:1.5;">Oversee on-site operations for commercial building projects from mobilization through closeout.</div></div>
+          <div class="career-card"><span class="career-tag salaried">Salaried</span><div class="career-title">Civil Superintendent</div><div style="color:var(--gray-light);font-size:0.85rem;margin-top:8px;line-height:1.5;">Lead field execution for civil infrastructure and site development projects.</div></div>
+          <div class="career-card"><span class="career-tag salaried">Salaried</span><div class="career-title">Civil Estimator</div><div style="color:var(--gray-light);font-size:0.85rem;margin-top:8px;line-height:1.5;">Prepare detailed civil cost estimates and bid packages for competitive and negotiated work.</div></div>
+          <div class="career-card"><span class="career-tag salaried">Salaried</span><div class="career-title">Civil Project Manager</div><div style="color:var(--gray-light);font-size:0.85rem;margin-top:8px;line-height:1.5;">Manage civil project delivery from preconstruction through owner acceptance.</div></div>
+          <div class="career-card"><span class="career-tag salaried">Salaried</span><div class="career-title">Building Project Manager</div><div style="color:var(--gray-light);font-size:0.85rem;margin-top:8px;line-height:1.5;">Lead commercial building projects ensuring schedule, budget, and quality standards are met.</div></div>
+        </div>
+      </div>
+      <!-- Hourly -->
+      <div>
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:32px;">
+          <div style="background:rgba(160,170,187,0.08);border:1px solid rgba(160,170,187,0.2);padding:6px 16px;font-family:var(--mono);font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gray-light);">Hourly Positions</div>
+        </div>
+        <div class="positions-grid" style="grid-template-columns:1fr;">
+          <div class="career-card"><span class="career-tag hourly">Hourly</span><div class="career-title">Carpenters</div><div style="color:var(--gray-light);font-size:0.85rem;margin-top:8px;line-height:1.5;">Formwork, framing, and finish carpentry on commercial and civil projects.</div></div>
+          <div class="career-card"><span class="career-tag hourly">Hourly</span><div class="career-title">Laborers</div><div style="color:var(--gray-light);font-size:0.85rem;margin-top:8px;line-height:1.5;">General site labor supporting construction activities across all markets.</div></div>
+          <div class="career-card"><span class="career-tag hourly">Hourly</span><div class="career-title">Operators / Finishers / Field Engineers</div><div style="color:var(--gray-light);font-size:0.85rem;margin-top:8px;line-height:1.5;">Equipment operators, concrete finishers, and field engineering support.</div></div>
+          <div class="career-card"><span class="career-tag hourly">Hourly</span><div class="career-title">CDL Drivers</div><div style="color:var(--gray-light);font-size:0.85rem;margin-top:8px;line-height:1.5;">Commercial drivers supporting material delivery and project logistics.</div></div>
+          <div class="career-card"><span class="career-tag hourly">Hourly</span><div class="career-title">Pipelayers</div><div style="color:var(--gray-light);font-size:0.85rem;margin-top:8px;line-height:1.5;">Underground utility and pipeline installation for water and civil projects.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REQUIREMENTS + APPLICATION -->
+<section class="section-pad bg-navy-mid">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;">
+      <div>
+        <div class="section-tag">Requirements</div>
+        <h2 class="section-h2" style="margin-bottom:36px;">What We<br><em>Require</em></h2>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <div class="req-item"><div style="width:8px;height:8px;background:var(--orange);flex-shrink:0;"></div><span style="font-size:0.92rem;color:var(--gray-light);">Must have reliable transportation</span></div>
+          <div class="req-item"><div style="width:8px;height:8px;background:var(--orange);flex-shrink:0;"></div><span style="font-size:0.92rem;color:var(--gray-light);">Must pass drug screen</span></div>
+          <div class="req-item"><div style="width:8px;height:8px;background:var(--orange);flex-shrink:0;"></div><span style="font-size:0.92rem;color:var(--gray-light);">Must be eligible to work in the US</span></div>
+          <div class="req-item"><div style="width:8px;height:8px;background:var(--orange);flex-shrink:0;"></div><span style="font-size:0.92rem;color:var(--gray-light);">Must have current driver's license</span></div>
+          <div class="req-item"><div style="width:8px;height:8px;background:var(--orange);flex-shrink:0;"></div><span style="font-size:0.92rem;color:var(--gray-light);">Must pass driver background check</span></div>
+        </div>
+        <div style="margin-top:40px;padding:28px;background:var(--navy-card);border:1px solid rgba(224,92,10,0.2);">
+          <div style="font-family:var(--mono);font-size:0.62rem;letter-spacing:0.18em;color:var(--orange);text-transform:uppercase;margin-bottom:12px;">Our Promise</div>
+          <p style="color:var(--gray-light);font-size:0.92rem;line-height:1.7;">We promote from within. Every salaried leader at STCC started somewhere on our team. We invest in the growth of every person who joins us.</p>
+        </div>
+      </div>
+      <div>
+        <div class="section-tag">Apply Now</div>
+        <h2 class="section-h2" style="font-size:2.5rem;margin-bottom:32px;">Submit Your<br><em>Resume</em></h2>
+        <form onsubmit="return false;">
+          <div class="form-group"><label class="form-label">Full Name</label><input type="text" class="form-input" placeholder="John Smith"></div>
+          <div class="form-group"><label class="form-label">Email Address</label><input type="email" class="form-input" placeholder="john@email.com"></div>
+          <div class="form-group"><label class="form-label">Phone Number</label><input type="tel" class="form-input" placeholder="(817) 000-0000"></div>
+          <div class="form-group">
+            <label class="form-label">Position of Interest</label>
+            <select class="form-select form-input">
+              <option value="">Select a position...</option>
+              <option>Building Superintendent</option>
+              <option>Civil Superintendent</option>
+              <option>Civil Estimator</option>
+              <option>Civil Project Manager</option>
+              <option>Building Project Manager</option>
+              <option>Carpenter</option>
+              <option>Laborer</option>
+              <option>Operator</option>
+              <option>Finisher</option>
+              <option>Field Engineer</option>
+              <option>CDL Driver</option>
+              <option>Pipelayer</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Resume Upload</label>
+            <div class="upload-zone" onclick="document.getElementById('resumeInput').click()">
+              <div style="font-family:var(--mono);font-size:0.7rem;letter-spacing:0.14em;color:var(--gray-mid);text-transform:uppercase;margin-bottom:8px;">Click to upload</div>
+              <div style="font-size:0.85rem;color:var(--gray-light);">PDF, DOC, or DOCX &mdash; Max 10MB</div>
+              <input type="file" id="resumeInput" style="display:none;" accept=".pdf,.doc,.docx">
+            </div>
+          </div>
+          <div class="form-group"><label class="form-label">Brief Message (Optional)</label><textarea class="form-textarea" placeholder="Tell us a bit about your experience..."></textarea></div>
+          <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Submit Application &rarr;</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="nav.js"></script>
+</body>
+</html>

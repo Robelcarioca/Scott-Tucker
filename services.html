@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Scott Tucker Construction Co.</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .delivery-grid { display: grid; grid-template-columns: repeat(5,1fr); gap: 2px; }
+    .delivery-card { background: var(--navy-card); border: 1px solid rgba(255,255,255,0.06); padding: 32px 24px; text-align: center; transition: border-color 0.3s, background 0.3s; }
+    .delivery-card:hover { border-color: var(--orange); background: var(--steel); }
+    .delivery-num { font-family: var(--mono); font-size: 0.58rem; color: var(--orange); letter-spacing: 0.2em; margin-bottom: 12px; }
+    .delivery-title { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; letter-spacing: 0.05em; line-height: 1.2; }
+    .services-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
+    .services-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; }
+    @media(max-width:900px){ .delivery-grid{grid-template-columns:repeat(2,1fr);} .services-cols{grid-template-columns:1fr;gap:48px;} .services-3{grid-template-columns:1fr 1fr;} }
+    @media(max-width:640px){ .delivery-grid{grid-template-columns:1fr;} .services-3{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body data-page="services">
+<div id="nav-placeholder"></div>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="grid-overlay"></div>
+  <div class="hero-accent-line"></div>
+  <img src="assets/building.jpg" alt="" class="page-hero-img">
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="hero-eyebrow animate-fade-up anim-delay-1"><div class="hero-eyebrow-line"></div><span style="font-family:var(--mono);font-size:0.7rem;letter-spacing:0.18em;color:var(--orange);text-transform:uppercase;">What We Do</span></div>
+    <h1 class="hero-h1 animate-fade-up anim-delay-2" style="font-size:clamp(3rem,7vw,7rem);">Our<br><span>Services</span></h1>
+    <p class="hero-sub animate-fade-up anim-delay-3">Comprehensive construction services from preconstruction through commissioning — delivered with precision, transparency, and accountability.</p>
+  </div>
+</section>
+
+<!-- DELIVERY METHODS -->
+<section class="section-pad">
+  <div class="container">
+    <div class="section-tag">Project Delivery</div>
+    <h2 class="section-h2" style="margin-bottom:48px;">How We <em>Deliver</em></h2>
+    <div class="delivery-grid">
+      <div class="delivery-card"><div class="delivery-num">01</div><div class="delivery-title">General Contractor</div></div>
+      <div class="delivery-card"><div class="delivery-num">02</div><div class="delivery-title">Construction Manager at Risk</div></div>
+      <div class="delivery-card"><div class="delivery-num">03</div><div class="delivery-title">Design Build</div></div>
+      <div class="delivery-card"><div class="delivery-num">04</div><div class="delivery-title">Competitive Bid</div></div>
+      <div class="delivery-card"><div class="delivery-num">05</div><div class="delivery-title">Owner's Rep</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRECONSTRUCTION & CONSTRUCTION -->
+<section class="section-pad bg-navy-mid">
+  <div class="container">
+    <div class="services-cols">
+      <div>
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:40px;">
+          <div style="width:3px;height:48px;background:var(--orange);"></div>
+          <div><div class="section-tag" style="margin-bottom:4px;">Phase 01</div><h2 class="section-h2" style="font-size:2.8rem;">Pre-<em>construction</em></h2></div>
+        </div>
+        <div>
+          <div class="service-item"><div class="service-num">01</div><div class="service-name">Estimating</div></div>
+          <div class="service-item"><div class="service-num">02</div><div class="service-name">Budgeting</div></div>
+          <div class="service-item"><div class="service-num">03</div><div class="service-name">Cost Modeling</div></div>
+          <div class="service-item"><div class="service-num">04</div><div class="service-name">Design Management</div></div>
+          <div class="service-item"><div class="service-num">05</div><div class="service-name">Scheduling</div></div>
+          <div class="service-item"><div class="service-num">06</div><div class="service-name">Bid Packaging</div></div>
+          <div class="service-item"><div class="service-num">07</div><div class="service-name">Value Engineering</div></div>
+          <div class="service-item"><div class="service-num">08</div><div class="service-name">Resource Management</div></div>
+          <div class="service-item"><div class="service-num">09</div><div class="service-name">LEED Planning</div></div>
+        </div>
+      </div>
+      <div>
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:40px;">
+          <div style="width:3px;height:48px;background:var(--steel-mid);"></div>
+          <div><div class="section-tag" style="margin-bottom:4px;">Phase 02</div><h2 class="section-h2" style="font-size:2.8rem;"><em>Construction</em></h2></div>
+        </div>
+        <div>
+          <div class="service-item"><div class="service-num">01</div><div class="service-name">Phasing / Sequencing</div></div>
+          <div class="service-item"><div class="service-num">02</div><div class="service-name">Scheduling</div></div>
+          <div class="service-item"><div class="service-num">03</div><div class="service-name">Safety Planning and Management</div></div>
+          <div class="service-item"><div class="service-num">04</div><div class="service-name">Waste Management</div></div>
+          <div class="service-item"><div class="service-num">05</div><div class="service-name">Quality Assurance / Quality Control</div></div>
+          <div class="service-item"><div class="service-num">06</div><div class="service-name">Self Perform Concrete Operations</div></div>
+          <div class="service-item"><div class="service-num">07</div><div class="service-name">Subcontractor / Supplier Management</div></div>
+          <div class="service-item"><div class="service-num">08</div><div class="service-name">Change Management</div></div>
+          <div class="service-item"><div class="service-num">09</div><div class="service-name">Status Reporting</div></div>
+          <div class="service-item"><div class="service-num">10</div><div class="service-name">Permitting / Inspection Coordination</div></div>
+          <div class="service-item"><div class="service-num">11</div><div class="service-name">As-Built Documentation</div></div>
+          <div class="service-item"><div class="service-num">12</div><div class="service-name">Commissioning</div></div>
+          <div class="service-item"><div class="service-num">13</div><div class="service-name">Warranty / Guarantee Program</div></div>
+          <div class="service-item"><div class="service-num">14</div><div class="service-name">Operations and Maintenance</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARKETS SUMMARY -->
+<section class="section-pad">
+  <div class="container">
+    <div class="section-tag">Markets</div>
+    <h2 class="section-h2" style="margin-bottom:48px;">Sectors We <em>Serve</em></h2>
+    <div class="services-3">
+      <div class="feature-card"><div style="font-family:var(--mono);font-size:0.6rem;letter-spacing:0.18em;color:var(--orange);margin-bottom:16px;">Market 01</div><h3 style="font-family:'Bebas Neue',sans-serif;font-size:2.2rem;margin-bottom:12px;">Bridges</h3><p style="color:var(--gray-light);font-size:0.9rem;line-height:1.7;">Bridge construction, rehabilitation, and structural work across Texas.</p></div>
+      <div class="feature-card"><div style="font-family:var(--mono);font-size:0.6rem;letter-spacing:0.18em;color:var(--orange);margin-bottom:16px;">Market 02</div><h3 style="font-family:'Bebas Neue',sans-serif;font-size:2.2rem;margin-bottom:12px;">Electrical</h3><p style="color:var(--gray-light);font-size:0.9rem;line-height:1.7;">Industrial electrical systems, distribution, and power infrastructure.</p></div>
+      <div class="feature-card"><div style="font-family:var(--mono);font-size:0.6rem;letter-spacing:0.18em;color:var(--orange);margin-bottom:16px;">Market 03</div><h3 style="font-family:'Bebas Neue',sans-serif;font-size:2.2rem;margin-bottom:12px;">Water</h3><p style="color:var(--gray-light);font-size:0.9rem;line-height:1.7;">Water and wastewater treatment, distribution, and infrastructure systems.</p></div>
+      <div class="feature-card"><div style="font-family:var(--mono);font-size:0.6rem;letter-spacing:0.18em;color:var(--orange);margin-bottom:16px;">Market 04</div><h3 style="font-family:'Bebas Neue',sans-serif;font-size:2.2rem;margin-bottom:12px;">Coatings</h3><p style="color:var(--gray-light);font-size:0.9rem;line-height:1.7;">Protective coatings for structural steel, concrete, and industrial facilities.</p></div>
+      <div class="feature-card"><div style="font-family:var(--mono);font-size:0.6rem;letter-spacing:0.18em;color:var(--orange);margin-bottom:16px;">Market 05</div><h3 style="font-family:'Bebas Neue',sans-serif;font-size:2.2rem;margin-bottom:12px;">Building</h3><p style="color:var(--gray-light);font-size:0.9rem;line-height:1.7;">Commercial building construction — from institutional facilities to office and industrial.</p></div>
+      <div class="feature-card"><div style="font-family:var(--mono);font-size:0.6rem;letter-spacing:0.18em;color:var(--orange);margin-bottom:16px;">Market 06</div><h3 style="font-family:'Bebas Neue',sans-serif;font-size:2.2rem;margin-bottom:12px;">Civil</h3><p style="color:var(--gray-light);font-size:0.9rem;line-height:1.7;">Site work, underground utilities, roadways, and civil infrastructure.</p></div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="nav.js"></script>
+</body>
+</html>

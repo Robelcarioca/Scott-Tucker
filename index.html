@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scott Tucker Construction Co. | Fort Worth, Texas</title>
+  <meta name="description" content="Scott Tucker Construction Co. — Safe, High Quality, On Schedule and Within Budget. Fort Worth, Texas.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; min-height: 100vh; padding: 120px 0 80px; }
+    .hero-img-main { width: 100%; height: 520px; object-fit: cover; filter: brightness(0.75) saturate(0.7); }
+    .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 40px; }
+    .ticker { background: var(--orange); padding: 12px 0; overflow: hidden; }
+    .ticker-inner { display: flex; gap: 80px; white-space: nowrap; animation: ticker 30s linear infinite; }
+    .ticker-item { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--white); display: flex; align-items: center; gap: 24px; }
+    .ticker-item::before { content: '//'; opacity: 0.5; }
+    @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    .markets-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .why-img { width: 100%; height: 460px; object-fit: cover; filter: brightness(0.7) saturate(0.6); }
+    .metrics-bar { background: var(--steel); padding: 60px 0; }
+    .metrics-inner { display: grid; grid-template-columns: repeat(4, 1fr); }
+    .metric-item { padding: 32px 40px; border-right: 1px solid rgba(255,255,255,0.06); }
+    .metric-item:last-child { border-right: none; }
+    .cta-banner { background: var(--orange); padding: 80px 0; position: relative; overflow: hidden; }
+    .cta-banner::before { content: ''; position: absolute; top: -60px; right: -60px; width: 300px; height: 300px; border: 60px solid rgba(255,255,255,0.08); border-radius: 50%; }
+    @media (max-width: 1024px) { .hero-grid { grid-template-columns: 1fr; padding-top: 100px; } .hero-right { display: none; } .markets-grid { grid-template-columns: repeat(2,1fr); } .why-grid { grid-template-columns: 1fr; } .metrics-inner { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 640px) { .markets-grid { grid-template-columns: 1fr; } .metrics-inner { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body data-page="home">
+<div id="nav-placeholder"></div>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="grid-overlay"></div>
+  <div class="hero-accent-line"></div>
+  <div style="position:absolute;top:0;right:0;width:45%;height:100%;pointer-events:none;">
+    <div style="position:absolute;top:20%;right:10%;width:1px;height:60%;background:linear-gradient(to bottom,transparent,rgba(224,92,10,0.2),transparent);"></div>
+  </div>
+  <div class="container" style="width:100%;">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-eyebrow animate-fade-up anim-delay-1">
+          <div class="hero-eyebrow-line"></div>
+          <span style="font-family:var(--mono);font-size:0.7rem;letter-spacing:0.18em;color:var(--orange);text-transform:uppercase;">Fort Worth, Texas</span>
+        </div>
+        <h1 class="hero-h1 animate-fade-up anim-delay-2">Safe.<br><span>High</span><br>Quality.</h1>
+        <p style="font-family:var(--mono);font-size:0.72rem;letter-spacing:0.16em;color:var(--orange);margin:20px 0 8px;text-transform:uppercase;" class="animate-fade-up anim-delay-3">On Schedule &mdash; Within Budget</p>
+        <p class="hero-sub animate-fade-up anim-delay-3">Scott Tucker Construction Co. delivers commercial building, civil, electrical, and water infrastructure projects across Texas with precision engineering and an unwavering commitment to safety.</p>
+        <div class="hero-actions animate-fade-up anim-delay-4">
+          <a href="contact.html" class="btn-primary">Contact Us &rarr;</a>
+          <a href="services.html" class="btn-secondary">View Services</a>
+        </div>
+      </div>
+      <div class="hero-right animate-fade-up anim-delay-3">
+        <div style="position:relative;">
+          <img src="assets/building.jpg" alt="Scott Tucker Construction" class="hero-img-main">
+          <div style="position:absolute;top:-12px;right:-12px;width:40px;height:40px;border-top:2px solid var(--orange);border-right:2px solid var(--orange);"></div>
+          <div style="position:absolute;bottom:36px;left:-12px;width:40px;height:40px;border-bottom:2px solid var(--orange);border-left:2px solid var(--orange);"></div>
+          <div style="position:absolute;bottom:-24px;left:-24px;background:var(--navy-card);border:1px solid rgba(224,92,10,0.3);padding:24px 28px;min-width:200px;">
+            <div style="font-family:'Bebas Neue',sans-serif;font-size:2.8rem;color:var(--white);line-height:1;">0.75</div>
+            <div style="font-family:var(--mono);font-size:0.6rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gray-mid);margin-top:4px;">NCCI EMR Rating</div>
+            <div style="margin-top:6px;font-size:0.78rem;color:var(--gray-light);">Industry-leading safety</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="position:absolute;bottom:40px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;opacity:0.35;">
+    <div style="font-family:var(--mono);font-size:0.58rem;letter-spacing:0.2em;color:var(--white);text-transform:uppercase;">Scroll</div>
+    <div style="width:1px;height:40px;background:linear-gradient(to bottom,var(--white),transparent);"></div>
+  </div>
+</section>
+
+<div class="ticker">
+  <div class="ticker-inner">
+    <span class="ticker-item">Bridges</span><span class="ticker-item">Electrical</span><span class="ticker-item">Water Infrastructure</span><span class="ticker-item">Coatings</span><span class="ticker-item">Commercial Building</span><span class="ticker-item">Civil Construction</span><span class="ticker-item">Design Build</span><span class="ticker-item">Self-Perform Concrete</span>
+    <span class="ticker-item">Bridges</span><span class="ticker-item">Electrical</span><span class="ticker-item">Water Infrastructure</span><span class="ticker-item">Coatings</span><span class="ticker-item">Commercial Building</span><span class="ticker-item">Civil Construction</span><span class="ticker-item">Design Build</span><span class="ticker-item">Self-Perform Concrete</span>
+  </div>
+</div>
+
+<div class="metrics-bar">
+  <div class="container">
+    <div class="metrics-inner">
+      <div class="metric-item"><div class="stat-number">0.75</div><div class="stat-label">NCCI EMR Rating</div><div style="margin-top:8px;font-size:0.8rem;color:var(--gray-mid);">Industry-leading safety</div></div>
+      <div class="metric-item"><div class="stat-number">70%+</div><div class="stat-label">Negotiated Work</div><div style="margin-top:8px;font-size:0.8rem;color:var(--gray-mid);">Repeat client relationships</div></div>
+      <div class="metric-item"><div class="stat-number">70%+</div><div class="stat-label">Contracts Under $1M</div><div style="margin-top:8px;font-size:0.8rem;color:var(--gray-mid);">Focused project delivery</div></div>
+      <div class="metric-item"><div class="stat-number">6</div><div class="stat-label">Market Sectors</div><div style="margin-top:8px;font-size:0.8rem;color:var(--gray-mid);">Bridges, Electrical, Water &amp; more</div></div>
+    </div>
+  </div>
+</div>
+
+<section class="section-pad bg-navy-mid">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:64px;">
+      <div><div class="section-tag">Markets We Serve</div><h2 class="section-h2">Built for <em>Every</em><br>Sector</h2></div>
+      <div><p class="section-desc">From bridges and electrical infrastructure to water systems and commercial buildings, we bring engineering expertise and precision to every market.</p><a href="services.html" class="btn-secondary" style="margin-top:28px;display:inline-flex;">All Services &rarr;</a></div>
+    </div>
+    <div class="markets-grid">
+      <div class="market-card"><img src="assets/bridges.jpg" alt="Bridges"><div class="market-card-content"><div class="market-card-icon">01 &mdash; Market</div><div class="market-card-title">Bridges</div></div></div>
+      <div class="market-card"><img src="assets/electrical.jpg" alt="Electrical"><div class="market-card-content"><div class="market-card-icon">02 &mdash; Market</div><div class="market-card-title">Electrical</div></div></div>
+      <div class="market-card"><img src="assets/water.jpg" alt="Water"><div class="market-card-content"><div class="market-card-icon">03 &mdash; Market</div><div class="market-card-title">Water</div></div></div>
+      <div class="market-card" style="background:var(--steel);"><div style="width:100%;height:260px;background:linear-gradient(135deg,#1D2A40,#2A3A55);display:flex;align-items:center;justify-content:center;position:relative;"><div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:40px 40px;"></div><div style="font-size:4rem;opacity:0.1;font-family:'Bebas Neue',sans-serif;">COAT</div></div><div class="market-card-content"><div class="market-card-icon">04 &mdash; Market</div><div class="market-card-title">Coatings</div></div></div>
+      <div class="market-card"><img src="assets/building.jpg" alt="Building"><div class="market-card-content"><div class="market-card-icon">05 &mdash; Market</div><div class="market-card-title">Building</div></div></div>
+      <div class="market-card" style="background:var(--steel);"><div style="width:100%;height:260px;background:linear-gradient(135deg,#131B2E,#1D2A40);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;"><div style="position:absolute;inset:0;background-image:repeating-linear-gradient(45deg,rgba(224,92,10,0.03) 0,rgba(224,92,10,0.03) 1px,transparent 1px,transparent 50%);background-size:20px 20px;"></div><div style="font-size:4rem;opacity:0.08;font-family:'Bebas Neue',sans-serif;">CIVIL</div></div><div class="market-card-content"><div class="market-card-icon">06 &mdash; Market</div><div class="market-card-title">Civil</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad">
+  <div class="container">
+    <div class="why-grid">
+      <div style="position:relative;">
+        <img src="assets/water.jpg" alt="Construction expertise" class="why-img">
+        <div style="position:absolute;top:-12px;left:-12px;width:56px;height:56px;border-top:2px solid var(--orange);border-left:2px solid var(--orange);"></div>
+        <div style="position:absolute;bottom:-12px;right:-12px;width:56px;height:56px;border-bottom:2px solid var(--orange);border-right:2px solid var(--orange);"></div>
+        <div style="position:absolute;bottom:32px;right:-32px;background:var(--navy-card);border:1px solid rgba(224,92,10,0.3);padding:20px 24px;">
+          <div style="font-family:var(--mono);font-size:0.6rem;letter-spacing:0.2em;color:var(--orange);text-transform:uppercase;margin-bottom:6px;">Safety First</div>
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:1.8rem;line-height:1;">Everyone<br>Goes Home</div>
+        </div>
+      </div>
+      <div>
+        <div class="section-tag">Why STCC</div>
+        <h2 class="section-h2">Engineering<br>You Can <em>Trust</em></h2>
+        <div class="divider-orange"></div>
+        <p style="color:var(--gray-light);font-size:1rem;line-height:1.8;font-weight:300;margin-bottom:36px;">Our top priority is that our employees and everyone connected to our job sites goes home to their family every night. This isn't just a policy — it's the foundation of everything we build.</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:36px;">
+          <div style="display:flex;align-items:center;gap:12px;"><div style="width:6px;height:6px;background:var(--orange);flex-shrink:0;"></div><span style="font-size:0.88rem;color:var(--gray-light);">Strong Project Delivery</span></div>
+          <div style="display:flex;align-items:center;gap:12px;"><div style="width:6px;height:6px;background:var(--orange);flex-shrink:0;"></div><span style="font-size:0.88rem;color:var(--gray-light);">Industry Expertise</span></div>
+          <div style="display:flex;align-items:center;gap:12px;"><div style="width:6px;height:6px;background:var(--orange);flex-shrink:0;"></div><span style="font-size:0.88rem;color:var(--gray-light);">Negotiated Contracts</span></div>
+          <div style="display:flex;align-items:center;gap:12px;"><div style="width:6px;height:6px;background:var(--orange);flex-shrink:0;"></div><span style="font-size:0.88rem;color:var(--gray-light);">Self-Perform Concrete</span></div>
+          <div style="display:flex;align-items:center;gap:12px;"><div style="width:6px;height:6px;background:var(--orange);flex-shrink:0;"></div><span style="font-size:0.88rem;color:var(--gray-light);">Quality Assurance</span></div>
+          <div style="display:flex;align-items:center;gap:12px;"><div style="width:6px;height:6px;background:var(--orange);flex-shrink:0;"></div><span style="font-size:0.88rem;color:var(--gray-light);">Consistent Performance</span></div>
+        </div>
+        <div style="display:flex;gap:40px;">
+          <div class="stat-block"><div class="stat-number" style="font-size:2.2rem;">0.75</div><div class="stat-label">EMR Safety Score</div></div>
+          <div class="stat-block"><div class="stat-number" style="font-size:2.2rem;">70%</div><div class="stat-label">Negotiated Work</div></div>
+        </div>
+        <a href="about.html" class="btn-primary" style="margin-top:36px;">About STCC &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container" style="position:relative;z-index:1;">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:32px;">
+      <div>
+        <div style="font-family:var(--mono);font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:12px;">Ready to Build?</div>
+        <h2 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(2.5rem,5vw,4.5rem);letter-spacing:0.04em;line-height:0.95;color:var(--white);">Let's Work<br>Together</h2>
+      </div>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;">
+        <a href="contact.html" style="display:inline-flex;align-items:center;gap:10px;background:var(--white);color:var(--navy);font-family:var(--mono);font-size:0.75rem;letter-spacing:0.16em;text-transform:uppercase;text-decoration:none;padding:16px 32px;clip-path:polygon(10px 0%,100% 0%,calc(100% - 10px) 100%,0% 100%);font-weight:700;">Start a Project &rarr;</a>
+        <a href="tel:8173329008" style="display:inline-flex;align-items:center;gap:10px;background:transparent;color:var(--white);font-family:var(--mono);font-size:0.75rem;letter-spacing:0.16em;text-transform:uppercase;text-decoration:none;padding:15px 32px;border:1px solid rgba(255,255,255,0.4);">( 817 ) 332-9008</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="nav.js"></script>
+</body>
+</html>
